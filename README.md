@@ -5,6 +5,8 @@ This is a demo repo to show how to embed a CB instance in a CI/CD pipeline.
 
 **Note:** Docker must be installed on your host machine(s) for these scripts to work properly.
 
+Also, make sure you ```chmod +x``` each file to ensure it is executable prior to executing the scripts.
+
 ---
 
 #### initCouchbaseNode-docker.sh Usage:
