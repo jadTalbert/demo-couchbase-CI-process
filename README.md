@@ -1,6 +1,12 @@
 # demo-couchbase-CI-process
 This is a demo repo to show how to embed a CB instance in a CI/CD pipeline.
 
+---  
+
+**Note:** Docker must be installed on your host machine(s) for these scripts to work properly.
+
+---
+
 #### initCouchbaseNode-docker.sh Usage:
   - This script is used to fully launch a Couchbase node running on the version of your choice(via docker tags). There is no manual set up required after the node is launched and the template can be customized for some basic settings. This will evolve over time and allow for MDS(Multi Dimensional Scaling and other settings via the REST APIs).
 
@@ -14,7 +20,7 @@ This is a demo repo to show how to embed a CB instance in a CI/CD pipeline.
 #### Importing Documents
   - After your node is configured via the ```initCouchbaseNode-docker.sh``` script and your bucket has been created, you can use both [cbexport](https://docs.couchbase.com/server/6.5/tools/cbexport-json.html) and [cbimport](https://docs.couchbase.com/server/6.5/tools/cbimport-json.html) to export/import documents into your node.
 #### CI/CD Considerations
-  - There are many ways to handle this; however, the suggestion is to use your CI server to take advantage of minimize manual process. Bake these scripts into your pipeline in a way that is easy to manage and also helps you reduce manual testing and significantly improve your delivery quality and time.
+  - There are many ways to handle this; however, the suggestion is to use your CI server to take advantage of minimizing manual processes. Bake these scripts into your pipeline in a way that is easy to manage and also helps you reduce manual testing and significantly improve your delivery quality and time.
 
 #### Variable Definitions
   ```javascript
